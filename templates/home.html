@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/assets/css/mystyle.css" rel="stylesheet" type="text/css"/>
+    <script src="/assets/js/newjquery.js" type="text/javascript"> </script>
+    <script type="text/javascript">
+    $(document).ready( function(){
+            $("#p1").click(function () {
+                $("#d1").hide();
+              });
+
+            $("#p2").click(function () {
+                $("#d1").show();
+              });
+
+        });
+
+</script>
+</head>
+<body>
+<h1>welcome to first page of project</h1>
+<br/>
+<br/>
+<a href="{% url 'app1:about' % }">About</a>
+<br/>
+<img src="/assets/images/dwnldpic2.jpg" height="300px" width="250px">
+<div>
+    <p id="p1">Hide</p>
+    <p id="p2">Show</p>
+</div>
+<br/>
+<br/>
+    <div id="d1">
+
+    </div>
+</body>
+</html>

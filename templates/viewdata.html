@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Full Name</td>
+         <td>Email</td>
+         <td>Password</td>
+         <td>Mobile</td>
+        <td>Action</td>
+        <td>Action</td>
+    </tr>
+    {% if d %}
+    {% for i in d %}
+    <tr>
+        <td>{{i.userFullName}}</td>
+        <td>{{i.userEmail}}</td>
+        <td>{{i.userPassword}}</td>
+        <td>{{i.userMobile}}</td>
+         <td><a href="/deletedata/?id={{i.userEmail}}">Delete</a></td>
+        <td><a href="/datafetchup/?id={{i.userEmail}}">Edit</a></td>
+    </tr>
+     {% endfor %}
+    {% endif %}
+    <tr>
+
+
+
+    </tr>
+</table>
+
+</body>
+</html>

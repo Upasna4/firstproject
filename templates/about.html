@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>this is about page</h1>
+<a href="/home/">Home</a>
+{% if n %}
+<h1>{{n}}</h1>
+{% else %}
+<h1>no name found</h1>
+{% endif %}
+
+
+{% if l %}
+<ul>
+    {% for i in l %}
+    <li>{{i}}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% if success %}
+    <script type="text/javascript">
+        alert('Data Updated successfully');
+    </script>
+    {% endif %}
+    <label>User Full Name</label>
+  <input type="text" id="name" name="username" value="{{i.userFullName}}"><br/>
+  <label>Mobile</label>
+  <input type="text" id="mobile" name="usermobile" value="{{i.userMobile}}"><br/>
+    <label>Email</label>
+  <input type="text" id="email" name="useremail" value="{{i.userEmail}}"><br/>
+    <label>Password</label>
+  <input type="password" id="password" name="userpassword" value="{{i.userPassword}}"><br/>
+
+
+
+    <input type="submit"  value="Update">
+</form>
+</body>
+
+</html>

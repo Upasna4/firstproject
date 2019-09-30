@@ -155,3 +155,7 @@ def imagefetch(request):
         updatedata.save(update_fields=["userPassword","userPassword","userMobile","userFullName","image"])
         return redirect("/fetchimg/")
     return render (request,"imgdatafetch.html",{'i':data})
+
+
+def test():
+    pass

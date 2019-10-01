@@ -157,5 +157,3 @@ def imagefetch(request):
     return render (request,"imgdatafetch.html",{'i':data})
 
 
-def test():
-    pass
